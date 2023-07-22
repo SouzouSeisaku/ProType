@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProType;</title>
+    <link href="program.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="wrap">
+            <h1 class="title">ProType;</h1>
+            <p class="explanation">すべて打ち終わったらCtrl+Enter！</p>
+
+            <div class="button-003">
+                <a href="./select.html">メニューへ戻る</a>
+            </div>
+
+
+            <div class="wrap1">
+                <div class="box1">
+                    <input type="file" id="file"><br>
+                    <button id="start" class="button-001">START！</button>
+                </div>
+            </div>
+
+
+            <div class="wrap2">
+                <div class="output">
+                    <p>お手本<br>
+                        <textarea id="output_text" rows="4" style="font-size: 20px;" readonly disabled></textarea>
+                </div>
+            </div>
+
+
+            <div class="wrap3">
+                <div class="input">
+                    <p>入力欄<br>
+                        <textarea id="input_text" placeholder="お手本と同じように入力してね" style="font-size: 20px;"></textarea>
+                </div>
+            </div>
+
+
+            <div id="mask" class="hidden"></div>
+            <section id="modal" class="hidden">
+                <p>ミスしている行</p><br>
+                <ul>
+                    <li id="kekka"></li>
+                </ul>
+
+                <button id="close" class="button-002">ESCキーまたはクリックして閉じる</button>
+            </section>
+
+        </div>
+    </div>
+
+    </div>
+
+    <script src="program.js"></script>
+
+</body>
+
+</html>
