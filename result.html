@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protype</title>
+    <link rel="stylesheet" href="result.css">
+    <script src="result.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1> Your Result!</h1>
+
+            <div>
+                <strong>クリアタイム : </strong>
+                <span id="timer-result"></span>
+            </div>
+
+            <div>
+                <strong>正解キー数 : </strong>
+                <span id="score-result"></span>
+            </div>
+
+            <div>
+                <strong>不正解キー数 : </strong>
+                <span id="miss-result"></span>
+            </div>
+
+            <div>
+                <strong>正答率 : </strong>
+                <span id="correct-result"></span><strong> %</strong>
+            </div>
+
+            <div class="button">
+                <a href="./select.html">メニューへ戻る</a>
+            </div>
+
+            <h2 class="blink">ESCキーでもう一度</h2>
+
+        </div>
+    </div>
+
+    <script>
+        const searchParams = new URLSearchParams(window.location.search);  // URLのクエリパラメータを取得
+
+        const timerValue = searchParams.get('timer'); // クエリパラメータから情報を取得
+        const scoreValue = searchParams.get('score');
+        const missValue = searchParams.get('miss');
+        const correctValue = searchParams.get('correct');
+
+        // 取得した情報を表示
+        document.getElementById('timer-result').textContent = timerValue;
+        document.getElementById('score-result').textContent = scoreValue;
+        document.getElementById('miss-result').textContent = missValue;
+        document.getElementById('correct-result').textContent = correctValue;
+    </script>
+</body>
+
+</html>
