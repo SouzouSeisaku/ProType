@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProtType;</title>
+    <link rel="stylesheet" href="practice.css">
+
+    <audio id="scoresound" preload="auto">
+        <source src="score.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="misssound" preload="auto">
+        <source src="miss.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="nextsound" preload="auto">
+        <source src="next.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="finishsound" preload="auto">
+        <source src="finish.mp3" type="audio/mp3">
+    </audio>
+
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <p id="explain"></p>
+            <p id="explain-label"></p>
+            <p id="text"></p>
+            <font color="white">
+                <p class="info">
+                    正解キー数
+                <h1 id="score">0</h1>
+                不正解キー数 <h2 id="miss">0</h2>
+                正答率(%) <h3 id="correct">0.00</h3>
+                </p>
+            </font>
+            <div class="button">
+                <a href="./select.html">メニューへ戻る</a>
+            </div>
+            <div id="timer" class="timer">00:00
+            </div>
+            <script src="practice.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
