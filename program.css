@@ -1,0 +1,238 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrap {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80vw;
+    height: 80vh;
+}
+
+.title {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: bold;
+    color: #5B84FF;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-flow: column;
+}
+
+.explanation {
+    animation: blinking 0.7s ease-in-out infinite alternate;
+    position: absolute;
+    margin-top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    flex-flow: column;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.wrap1 {
+    position: absolute;
+    left: 50%;
+    margin-top: 7%;
+    transform: translateX(-50%);
+
+}
+
+.wrap2 {
+    position: absolute;
+    margin-top: 13%;
+    left: 5%;
+}
+
+.wrap3 {
+    position: absolute;
+    margin-top: 13%;
+    right: 5%;
+}
+
+
+
+.box1 {
+    align-items: center;
+    position: static;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333
+}
+
+ul {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333
+}
+
+.select {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    background: goldenrod;
+    padding: 8px 0;
+    border-radius: 16px;
+    text-align: center;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.select:hover {
+    background: #696969;
+}
+
+input {
+    position: relative;
+    margin: 8px 0 0 -14px;
+}
+
+.button-001 {
+    font-weight: bold;
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    padding: .9em 2em;
+    color: black;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: silver;
+    filter: drop-shadow(0px 2px 4px #ccc);
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.button-001:hover {
+    transform: translateY(-5%);
+    box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
+}
+
+
+.button-002 {
+    font-weight: bold;
+    position: static;
+    bottom: 20px;
+    margin: 0 auto;
+    align-items: center;
+    width: 250px;
+    margin: 0 auto;
+    padding: .9em 2em;
+    color: black;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: silver;
+    filter: drop-shadow(0px 2px 4px #ccc);
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.button-002:hover {
+    background: #696969;
+    color: white
+}
+
+
+.button-003 a {
+    position: fixed;
+    top: 1%;
+    right: 0.5%;
+    font-size: 15px;
+    padding: 5px 12px;
+    color: black;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: lightgrey;
+    filter: drop-shadow(0px 2px 4px #ccc);
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.button-003 a:hover {
+    transform: translateY(-5%);
+    box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
+}
+
+#mask {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#modal {
+    background: #fff;
+    color: #555;
+    width: 500px;
+    height: 300px;
+    padding: 40px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    overflow: scroll;
+}
+
+#mask.hidden {
+    display: none;
+}
+
+#modal.hidden {
+    display: none;
+}
+
+.kekka {
+    color: #ee7800;
+}
+
+body {
+    background-color: #EEEEEE;
+    overflow: hidden;
+}
+
+textarea {
+    resize: none;
+    width: 600px;
+    height: 350px;
+}
