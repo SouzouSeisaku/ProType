@@ -33,7 +33,7 @@ var textLists = [
     },
     {
         text: 'String␣name␣=␣"ABCDE";',
-        explain: '文字列型はStringで宣言。nameにJohnを代入',
+        explain: '文字列型はStringで宣言。nameにABCDEを代入',
         used: false
     },
     {
